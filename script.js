@@ -7,13 +7,47 @@
 
 
 // Chiedere quanti km vuole percorrere
-
+let kmUtente = parseInt(prompt("quanti km vuoi percorrere?"));
+console.log(kmUtente);
 
 // chiedere quanti anni ha
+let anniUtente = parseInt(prompt("quanti anni hai?"));
+console.log(anniUtente);
 
-// formula per i minorenno 20% di sconto
 
-// foruma per gli over 65 40% di sconto
+
+// calcolare prezzo al km
+let prezzoBase = parseInt(Math.floor(kmUtente * 0.21));
+console.log(prezzoBase);
+
+
+// formula per lo sconto
+
+let sconto; 
+    if (anniUtente < 19) {
+       sconto = (prezzoBase / 100) * 20;
+}
+    else if (anniUtente > 64) {
+       sconto = (prezzoBase / 100) * 40;
+}
+console.log(sconto);
+
+
+// CALCOLO SCONTO
+
+
+
+
+
+
+
+
+// let prezzoBase = parseInt(Math.floor(kmUtente * 0.21));
+// console.log(prezzoBase);
+
+
+
+
 
 // calcolare se l'utente ha uno sconto o meno
 
