@@ -30,25 +30,17 @@ let sconto;
     else if (anniUtente > 64) {
        sconto = (prezzoBase / 100) * 40;
 }
+    else
+        sconto = 0
 console.log(sconto);
 
 
 // CALCOLO SCONTO
 
+let prezzoFinale = prezzoBase - sconto;
 
+console.log("prezzo finale scontato", prezzoFinale);
 
-
-
-
-
-
-// let prezzoBase = parseInt(Math.floor(kmUtente * 0.21));
-// console.log(prezzoBase);
-
-
-
-
-
-// calcolare se l'utente ha uno sconto o meno
 
 // mettere tutto a schermo
+document.getElementById("prezzo").innerHTML = prezzoFinale, "€"
